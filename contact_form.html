@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.0.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="frmContact">
+        <div id="mail-status"></div>
+        <div>
+            <label style="padding-top:20px;">Name</label><span id="userName-info" class="info"></span><br />
+            <input type="text" name="userName" id="userName" class="demoInputBox">
+        </div>
+        <div>
+            <label>Email</label><span id="userEmail-info" class="info"></span><br />
+            <input type="text" name="userEmail" id="userEmail" class="demoInputBox">
+        </div>
+        <div>
+            <label>Subject</label><span id="subject-info" class="info"></span><br />
+            <input type="text" name="subject" id="subject" class="demoInputBox">
+        </div>
+        <div>
+            <label>Content</label><span id="content-info" class="info"></span><br />
+            <textarea name="content" id="content" class="demoInputBox" cols="60" rows="6"></textarea>
+        </div>
+        <div>
+            <button name="submit" class="btnAction" onClick="sendContact();">Send</button>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+
+        function sendContact() {
+            $name = $("#userName").val();
+            $email = $("#userEmail").val();
+            $subject = $("#subject").val();
+            $content = $("#content").val()
+            // var valid;	
+            // valid = validateContact();
+            // if(valid) {
+            $.ajax({
+                url: "http://192.168.0.197:8080/api/contact-us/send-mail",
+                data: {
+                    name: $name,
+                    email: $email,
+                    subject: $subject,
+                    content: $content
+                },
+                type: "POST",
+                success: function (data) {
+                    $("#mail-status").html(data);
+                },
+                error: function (err) {
+                    return (err)
+                }
+            });
+        }
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

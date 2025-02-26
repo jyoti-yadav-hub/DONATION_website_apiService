@@ -1,0 +1,52 @@
+PORT=8080
+serverKey =''
+secret = ''
+GOOGLE_API_KEY = ''
+google_client_id =''
+apple_client_id= ''
+############### Adyen Payment ###############
+ADYEN_API_KEY =''
+ADYEN_MERCHANT_ACCOUNT = ''
+ADYEN_CLIENT_KEY = ''
+ADYEN_ENVIRONMENT = ''
+ADYEN_HMAC_KEY = ''
+############### Stripe Payment ###############
+stripeToken=''
+
+############## S3 Access #################
+AWS_ACCESS_KEY_ID= ''
+AWS_SECRET_ACCESS_KEY= ''
+AWS_PUBLIC_BUCKET_NAME= ''
+AWS_ENDPOINT= ''
+AWS_REGION= ''
+spaceURL= ''
+S3_IMAGE_URL= ''
+GOOGLE_MAP_API_KEY=''
+IP_LOCATION_ACCESS_KEY=''
+
+# # AZURE SERVER DB
+DB_URL=''
+LOG_DB_URL=''
+
+STRIPE_COOKIE=''
+AAUTI_PAYMENT_URL=''
+SMS_TOKEN=''
+ADMIN_URL=''
+CORPORATE_INVITE_LINK=''
+MONGOURL =''
+DB_NAME = ''
+AWS_BUCKET= ''
+AWS_PREFIX= ''
+TWILIO_ACCOUNT_SID=''
+TWILIO_AUTH_TOKEN=''
+TWILIO_PHONE_NUMBER=''
+New_TWILIO_PHONE_NUMBER=  ''
+EXCHANGE_RATE_API_KEY = ''
+
+#Credential for azure image upload
+ACCOUNT_NAME = ''
+ACCOUNT_KEY =''
+CONTAINER_NAME =''
+DEFAULT_PAYMENT_GATEWAY=''
+
+
