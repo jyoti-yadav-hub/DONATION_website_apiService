@@ -1,0 +1,8 @@
+{
+    "sms_block_help_request": "Update! Your help request has been blocked by admin.",
+    "sms_unblock_help_request": "Update! Your help request has been unblocked by admin.",
+    "sms_accept_help_request": "Update! Your help request has been accepted by {{uname}} Volunteer.",
+    "sms_report_help_request": "Update! Your help request has been reported by {{uname}} Volunteer.",
+    "sms_complete_help_request": "Update! Your help request has been completed by {{uname}} Volunteer.",
+    "sms_reject_help_request": "Update! Your help request has been rejected by {{uname}} Volunteer."
+}
